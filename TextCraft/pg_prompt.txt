@@ -1,0 +1,14 @@
+You are given two kinds of evidence extracted from the current Minecraft crafting trajectory, and a list of schema entries for the "craft" task type. Each schema entry has the form [environment evidence, agent state evidence, applicable action], meaning: when the environment evidence and the agent state evidence both hold, the action is applicable to advance the task.
+
+Check each entry one by one. An entry is supported only when BOTH its environment condition and its agent condition are supported by the given evidence. Output only the index (0, 1, or 2) of the best supported entry. If no entry is reliably supported, output "no reliable match".
+
+Environment evidence:
+<ENV_EVIDENCE>
+
+Agent state evidence:
+<AGENT_EVIDENCE>
+
+Schema entries:
+<ENTRIES>
+
+Your response should be:

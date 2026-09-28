@@ -1,0 +1,9 @@
+You are crafting an item in Minecraft in a text-based environment. Below is the interaction trajectory and the current progress context. Based on them, produce one concise rationale that states the next action to advance the task, including the concrete quantity. Do not invent progress beyond the evidence.
+
+Trajectory:
+<TRAJECTORY>
+
+Progress context:
+<CONTEXT>
+
+Your response should be a single line describing the next action, for example "To get target objects, since the command is ..., I need to get ..." or "To craft target objects, since the command is ... and I got all materials, next I will do ...".

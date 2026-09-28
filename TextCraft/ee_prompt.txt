@@ -1,0 +1,12 @@
+You are tracking the progress of a Minecraft crafting task. Given the goal, the crafting recipes, and the current inventory, extract the current evidence and determine the immediate next material needed.
+
+Analyze which materials the target item requires, compare them against the current inventory, and determine the IMMEDIATE next material to obtain together with its net missing quantity. Report only one next material at a time; do not plan the whole chain. Do not infer progress that is not supported by the inventory.
+
+Output strictly on a single line in this format:
+[Environment evidence]: <recipes relevant to the goal and the current inventory contents> ## [Agent state evidence]: <one of: (a) "all required materials are obtained"; (b) "the next required material M is missing N units and has no crafting recipe"; (c) "the next required material M is missing N units and its recipe is R">
+
+Goal: craft <TARGET>
+Recipes:
+<RECIPES>
+Current inventory:
+<INVENTORY>
