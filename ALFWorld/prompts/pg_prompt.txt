@@ -1,0 +1,14 @@
+You are a schema matcher for a household task. Given the extracted evidence and the schema entries for the current task type, check each entry. An entry matches only when BOTH its environment condition and its agent condition are supported and reliably determined by the evidence.
+
+Output the matching entries, each with a short justification of the supporting evidence. If no entry is reliably matched, output "no reliable match".
+
+Rules:
+- Do not match by overall similarity of the task or trajectory.
+- Do not infer a condition just because the entry's action looks reasonable.
+- If a condition is missing, contradictory, or ambiguous, do not force a match.
+
+Evidence:
+{evidence}
+
+Schema entries:
+{schema_entries}

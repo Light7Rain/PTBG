@@ -1,0 +1,20 @@
+You are an evidence extractor for a household task in a text-based environment. From the interaction trajectory below, extract only facts that are directly supported by the trajectory. Output two sections with these fields.
+
+[Environment evidence]
+- where is the target object
+- what is the target receptacle
+- your current position
+- whether the target object has been found, and the receptacle where it was found
+- receptacles that have been searched and do not contain the target object
+
+[Agent state evidence]
+- whether the agent is holding the target object
+- for a two-object task, whether the first object and the second object have been put
+
+Rules:
+- Report only facts supported by the trajectory. If a fact is not observed, write "unknown".
+- Update stale states according to the latest observation.
+- Do not judge overall task progress. Do not recommend the next action. Be concise.
+
+Trajectory:
+{trajectory}
